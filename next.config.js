@@ -23,6 +23,7 @@ module.exports = nextConfig */
   }
 } */
 
+
 module.exports = {
   reactStrictMode: true,
   basePath: '/platzi-react-next-store',
