@@ -25,6 +25,7 @@ module.exports = nextConfig */
 
 module.exports = {
   reactStrictMode: true,
+  basePath: '/platzi-react-next-store',
   images: {
     domains: ['placeimg.com','api.lorem.space','vuzoon.com','www.complementosdelcafe.com','i.imgur.com'],
   },
