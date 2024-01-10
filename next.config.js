@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} 
+/** @type {import('next').NextConfig}
 const nextConfig = {
   reactStrictMode: true,
 }
@@ -24,7 +24,16 @@ module.exports = nextConfig */
 } */
 
 
+const debug = process.env.NODE_ENV !== "production";
+
 module.exports = {
+  exportPathMap: function () {
+    return {
+      "/": { page: "/" },
+      "/ap-grid-layout": { page: "/ap-grid-layout" },
+    }
+  },
+  assetPrefix: !debug ? 'https://marigabirodcue.github.io/platzi-react-next-store/' : '',
   reactStrictMode: true,
   basePath: '/platzi-react-next-store',
   images: {
